@@ -160,7 +160,7 @@
         transform:translate(-123px, -123px) rotate(360deg);
     }
 }
-@media screen and (max-width:440px){
+@media screen and (max-width:475px){
     .about__content{
         width: 100%;
         padding: 0;
