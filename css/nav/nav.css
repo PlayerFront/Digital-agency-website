@@ -1,0 +1,99 @@
+.nav{
+    position:fixed;
+    left: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding:24px;
+    background: var(--bg-color);
+    z-index: 1000;
+    border-radius: 20px;
+    box-shadow: var(--basic-shadow);
+}
+.nav__title{
+    text-align: center;
+    margin-bottom:33px;
+}
+.nav__menu{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    perspective:1000px;
+}
+.nav__menu-item{
+    position: relative;
+    width: 70px;
+    height: 70px;
+    transform-style:preserve-3d;
+    transition:0.5s;
+    margin-bottom: 30px;
+}
+.nav__menu-item:hover{
+    transform: rotateY(180deg);
+}
+.nav__menu-item__front{
+    width: 70px;
+    height: 70px;
+    background: var(--card-bg-color);
+    border-radius: 10px;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:2;
+    backface-visibility: hidden;
+    padding: 24px 14px;;
+}
+.nav__menu-item__back{
+    width: 70px;
+    height:70px;
+    background: var(--card-bg-color);
+    border-radius: 10px;
+    display: flex;
+    text-decoration: none;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index: 1;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    padding:5px;
+    justify-content: space-between;
+    font-weight: 700;
+    color: var(--font-site-color);
+}
+.nav__menu-item__back img{
+    width:70%;
+    height: 70%;
+    align-self: flex-end;
+}
+@media screen and (max-width:440px){
+    .nav{
+        bottom: 42px;
+        top:90%;
+        left:0px;
+        height: fit-content;
+        width: 100%;
+        padding:0 31px;
+    }
+    .nav__title{
+        margin-bottom:4px;
+    }
+    .nav__menu{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .nav__menu-item{
+        margin-bottom: 5px;
+        transform-style:flat;
+    }
+    .nav__menu-item:hover{
+        transform: none;
+    }
+    .nav__menu-item__front{
+        display: none;
+    }
+    .nav__menu-item__back{
+        backface-visibility: visible;
+        transform:rotateY(0deg);
+    }
+
+}

@@ -1,0 +1,73 @@
+@font-face {
+    font-family: ProtoSans;
+    src: url(../font/protoSans.ttf) format('opentype');
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(../font/montserrat/Montserrat-Light.ttf) format('opentype');
+    font-weight: 300;
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(../font/montserrat/Montserrat-Regular.ttf) format('opentype');
+    font-weight:400;
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(../font/montserrat/Montserrat-ExtraBold.ttf) format('opentype');
+    font-weight: 800;
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(../font/montserrat/Montserrat-Black.ttf) format('opentype');
+    font-weight:900;
+}
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+html{
+    font-size:16px;
+}
+h1{
+    font-size: var(--title-size);
+}
+h2, label{
+    font-size: var(--sub-title-size);
+}
+h3, p, a{
+    font-size: var(--base-text-size);
+}
+.page-name{
+    font-family: ProtoSans;
+    font-size: 5rem;
+    position: relative;
+    width: 50px;
+    color: var(--font-site-color);
+    transform: translateX(-100%);
+}
+.page-name__text{
+    transform: rotate(90deg) translateY(-300%);
+    font-family: ProtoSans;
+    font-size: 2rem;
+    display: block;
+    position:absolute;
+    transform-origin: left;
+    top:0;
+    left:0;
+    width: 330px;
+}
+.gray-card{
+    background: var(--card-bg-color);
+    border-radius: 20px;
+}
+@media screen and (max-width:440px) {
+    h1{
+        font-size: var(--mobile-title-size);
+    }
+    .page-name, .page-name__text{
+        display: none;
+    }
+}

@@ -1,0 +1,105 @@
+.stages{
+    position: relative;
+    background: var(--bg-color);
+}
+.stages__content{
+    margin: 0 auto;
+    max-width:1300px;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 395px);
+    gap:20px;
+    grid-template-areas: 'img img st1' 'img img st4' 'st2 st5 st3' ;
+    padding: 100px 0;
+}
+.stages__title-container{
+    position:absolute;
+    top:0;
+    left: 0;
+    width: calc(100% - 3rem);
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.stages__title{
+    position: sticky; 
+    top: 80px;
+    height: fit-content;
+    
+} 
+.stages__step{
+    display: flex;
+    overflow: hidden;
+    padding:30px;
+}
+.stages_img{
+    grid-area: img;
+    background: url('img/other-bg.png') center/cover no-repeat;
+    position:relative;
+}
+.stages_img img{
+    position: absolute;
+    bottom:0;
+}
+.stages_one{
+    grid-area:st1;
+}
+.stages_two{
+    grid-area:st2;
+}
+.stages_three{
+    grid-area:st3;
+}
+.stages_one, .stages_two, .stages_three{
+    flex-direction: column;
+    justify-content: space-between;
+}
+.stages_one h2, .stages_two h2, .stages_three h2{
+    font-size: 8rem;
+    color: var(--accent-color-2);
+    font-weight: 700;
+}
+.stages_one p, .stages_two p, .stages_three p{
+    font-size: var(--sub-title-size);
+    font-weight: 700;
+    align-self: flex-end;
+}
+.stages_four{
+    grid-area:st4;
+    background: linear-gradient(46.40deg, rgb(11, 182, 255) -2.978%,rgb(126, 98, 179) 51.58%,rgb(148, 82, 165) 52.7%,rgb(255, 5, 95) 100%);
+}
+.stages_five{
+    grid-area:st5;
+    background: linear-gradient(223.79deg, rgb(11, 182, 255) 5.175%,rgb(248, 150, 79) 59.996%,rgb(255, 5, 95) 100%);
+}
+@media screen and (max-width:440px){
+    .stages{
+        padding: 0 20px;
+    }
+    .stages__content{
+        width: 100%;
+        grid-template-columns: repeat(1, 100%);
+        grid-template-rows: repeat(7, 220px);
+        grid-template-areas: 'img' 'img' 'img' 'st1' 'st2' 'st3' 'st4';   
+    }
+    .stages__step{
+        width: 100%;
+        flex-direction: row;
+    }
+    .stages_five{
+        transform: scale(0);
+        
+    }
+    .stages_img{
+        background: linear-gradient(223.79deg, rgb(11, 182, 255) 5.175%,rgb(248, 150, 79) 59.996%,rgb(255, 5, 95) 100%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .stages_img img{
+        width:95%;
+        height: 100%;
+    }
+
+}

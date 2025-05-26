@@ -1,0 +1,90 @@
+.header{
+    height:100vh;
+    width:100%;
+    background: url('img/header-bg.png') center/cover no-repeat;
+}
+.header__container{
+    height: 100%;
+    width:100%;
+    max-width:1700px;
+    padding-top: 100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+.header__content-left{
+    width:607px;
+    margin-left: 90px;
+}
+.header__left-title{
+    margin-bottom: 150px;
+}
+.header__left-button{
+    width: 100px;
+    height: 100px;
+    display: block;
+    border: 2px solid var(--accent-color-2);
+    border-radius: 50%;
+    position:relative;
+}
+.header__left-button::before{
+    content:"";
+    width:38px;
+    height:40px;
+    background: url('icons/header-btn-arrow.svg');
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    transition:0.2s;
+}
+.header__left-button:hover::before{
+    transform: translate(-50%, 150%);
+}
+.header__content-right{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 4px solid var(--white-color);
+    border-radius:20px;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(30px);
+    box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.25);
+    padding: 45px 0 32px 58px;
+    box-sizing: border-box;
+}
+.header__content-right img:nth-of-type(2){
+    position: absolute;
+    top: 33px;
+    left: -73px;
+    border-radius: 20px;
+    box-shadow: var(--basic-shadow);
+}
+@media screen and (max-width:440px){
+    .header{
+        background: url('img/header-bg-mobile.png') center/cover no-repeat;
+    }
+    .header__content-right{
+        display: none;
+    }
+    .header__content-left{
+        width: 100%;
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .header__left-title{
+        font-size: var(--mobile-title-size);
+        margin-bottom:130px;
+    }
+    .header__left-button{
+        background: var(--white-color);
+    }
+    .header__left-button:hover::before{
+        transform: translate(-50%, -50%);
+    }
+}

@@ -1,0 +1,16 @@
+:root{
+    --bg-color:white;
+    --card-bg-color:#eaeaea;
+    --font-card-color: #343434;
+    --font-site-color: #000000;
+    --white-color: white;
+    --main-gradient: radial-gradient(30.58% 197.36% at 30.23% 113.13%, #FF542F 0%, rgba(255, 84, 47, 0) 100%),
+    linear-gradient(272.09deg, #FF055F -2.21%, #0BB6FF 108.82%);
+    --basic-shadow: 0px 20px 30px rgba(0, 0, 0, 0.07);
+    --accent-color-1:#FF055F;
+    --accent-color-2:#0BB6FF;
+    --title-size:3rem;
+    --sub-title-size:2rem;
+    --base-text-size:1rem;
+    --mobile-title-size:2.5rem;
+}

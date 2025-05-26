@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/icons/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <section class="top-bar">
+        <div class="top-bar__container">
+            <input type="checkbox" class="top-bar__form-toggler" id="top-bar__form-toggler">
+            <div class="top-bar__body">
+                <a href="#" class="top-bar__logo">
+                    <img src="img/icons/logo.png" alt="логотип компании" class="top-bar__image">
+                </a>
+                <label for="top-bar__form-toggler" class="top-bar__button">
+                        
+                </label>
+            </div>
+            <div class="top-bar__form">
+                <form action="" class="top-bar__form-body">
+                    <h2 class="form-body__title">Оставить заявку</h2>
+                    <input type="text" class="form-body__name" placeholder="Имя">
+                    <input type="email" class="form-body__mail" placeholder="Почта">
+                    <button class="form-body__submit">Подтвердить</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <nav class="nav">
+        <p class="nav__title">
+            Меню
+        </p>
+        <ul class="nav__menu">
+            <li class="nav__menu-item">
+                <img src="img/icons/menu_item-front.svg" class="nav__menu-item__front">
+                <a class="nav__menu-item__back" href="#">
+                    <p>0</p>
+                    <img src="img/icons/menu_item-back0.svg">
+                </a>
+            </li>
+            <li class="nav__menu-item">
+                <img src="img/icons/menu_item-front.svg" class="nav__menu-item__front">
+                <a class="nav__menu-item__back" href="#">
+                    <p>1</p>
+                    <img src="img/icons/menu_item-back1.svg">
+                </a>
+            </li>
+            <li class="nav__menu-item">
+                <img src="img/icons/menu_item-front.svg" class="nav__menu-item__front">
+                <a class="nav__menu-item__back" href="#">
+                    <p>2</p>
+                    <img src="img/icons/menu_item-back2.svg">
+                </a>
+            </li>
+            <li class="nav__menu-item">
+                <img src="img/icons/menu_item-front.svg" class="nav__menu-item__front">
+                <a class="nav__menu-item__back" href="#">
+                    <p>3</p>
+                    <img src="img/icons/menu_item-back3.svg">
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <header class="header">
+        <div class="header__container">
+            <div class="header__content-left">
+                <h1 class="header__left-title">Дизайн, верстка и разработка сайтов</h1>
+                <a href="#" class="header__left-button"></a>
+            </div>
+            <div class="header__content-right">
+                <img src="img/images/header-knight.png">
+                <img src="img/images/header-pannel.png">
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="about">
+            <div class="about__content">
+                <div class="about__item about_layouts gray-card">
+                  <img src="img/images/about-card1.png" alt="изображение макета">
+                  <h2>Макеты</h2>
+                  <p>Создание и верстка различных макетов. Настраиваемые и гибкие решения. Возможность кастомизации под изменения вашей компании.</p>
+                </div>
+                <div class="about__item about_icons gray-card">
+                    <img src="img/images/about-card2.png" alt="изображение разных иконок">
+                    <h2>Иконография</h2>
+                    <p>Создание иконок или редизайн имеющихся</p>
+                </div>
+                <div class="about__item about_forms gray-card">
+                    <img src="img/images/about-card3.png" alt="изображение формы">
+                    <h2>Формы</h2>
+                </div>
+                <div class="about__item about_picture1 gray-card">
+                    <img src="img/images/about-card4.png" alt="картинка с мотоциклом на цветном фоне">
+                </div>
+                <div class="about__item about_anim-circle gray-card">
+                    <img src="img/images/about-card5-gradient-ring.svg">
+                    <img src="img/images/about-card5-white-circle.svg">
+                </div>
+                <div class="about__item about_cycle gray-card">
+                    <img src="img/images/about-card6.png">
+                    <img src="img/images/about-mobile-cycle-img.png">
+                    <h2>Полный цикл разработки</h2>
+                    <p>Вносите свои пожелания в процессе работы. Отслеживайте состояние разработки</p>
+                </div>
+                <div class="about__item about_gradient gray-card">
+                    <h2>Делаем с душой!</h2>
+                </div>
+                <div class="about__item about_picture2 gray-card">
+                    <img src="img/images/about-card8.png" alt="картирнка мобильного телефона">
+                </div>
+            </div>
+            <div class="about__title-container">
+                <h2 class="page-name about__title">
+                    1 <span class="page-name__text">О нас</span>
+                </h2>
+            </div>
+        </section>
+        <section class="portfolio">
+            <div class="portfolio__content">
+                    <input type="radio" id = "portfolio__r1" class="portfolio__r1" name="portfolio-item" checked>
+                    <input type="radio" id = "portfolio__r2" class="portfolio__r2" name="portfolio-item">
+                    <input type="radio" id = "portfolio__r3" class="portfolio__r3" name="portfolio-item">
+                    <div class="portfolio__togglers">
+                        <label  class="portfolio__toggler-item" for="portfolio__r1">Проект 1</label>
+                        <label  class="portfolio__toggler-item" for="portfolio__r2">Проект 2</label>
+                        <label  class="portfolio__toggler-item" for="portfolio__r3">Проект 3</label>
+                    </div>
+                <div class="portfolio__images">
+                <img src="img/images/portfolio1.png" alt="фото проекта 1" class="portfolio__img-item">
+                <img src="img/images/portfolio2.png" alt="фото проекта 2" class="portfolio__img-item">
+                <img src="img/images/portfolio3.png" alt="фото проекта 3" class="portfolio__img-item">
+            </div>
+        </div>
+            <div class="portfolio__title-container">
+                <h2 class="page-name portfolio__title">2<span class="page-name__text">Портфолио</span></h2>
+            </div>
+        </section>
+        <section class="stages">
+            <div class="stages__content">
+                <div class="stages__step stages_img gray-card">
+                    <img src="img/images/other-phone.png" alt="изображение мобильного телефона">
+                </div>
+                <div class="stages__step stages_one gray-card">
+                    <h2>1</h2>
+                    <p>Закажи</p>
+                </div>
+                <div class="stages__step stages_two gray-card">
+                    <h2>2</h2>
+                    <p>Заплати</p>
+                </div>
+                <div class="stages__step stages_three gray-card">
+                    <h2>3</h2>
+                    <p>Получи</p>
+                </div>
+                <div class="stages__step stages_four gray-card">
+                </div>
+                <div class="stages__step stages_five gray-card">
+                </div>
+            </div>
+            <div class="stages__title-container">
+                <h2 class="page-name stages__title">
+                    3 <span class="page-name__text">Веб сайт легко</span>
+                </h2>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+            <h2 class="footer__subtitle">Мои контакты</h2>
+            <p class="footer__item">почта:abc@gmail.com</p>
+            <p class="footer__item">телефон: 8-232-31-32-231</p>
+            <h2 class="footer__subtitle">Больше наших проектов тут</h2>
+            <a href="#" class="footer__item-link">Сайт про Марс</a>
+            <a href="#" class="footer__item-link">Сайт кинотеатр</a>
+            <a href="#" class="footer__item-link">Сайт Порше</a>
+            <a href="#" class="footer__item-link">Сайт диджитал агенства</a>
+        <p class="footer__developer">Демо сайт разработанный учеником Еленой</p>
+    </footer>
+</body>
+</html>

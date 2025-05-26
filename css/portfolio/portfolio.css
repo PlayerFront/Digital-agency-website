@@ -1,0 +1,96 @@
+.portfolio{
+    position: relative;
+    background: var(--bg-color);
+    color: var(--white-color);
+}
+.portfolio__title-container{
+    position:absolute;
+    top:0;
+    left: 0;
+    width: calc(100% - 3rem);
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.portfolio__title{
+    position: sticky; 
+    top: 80px;
+    height: fit-content;
+} 
+.portfolio__content{
+    position: relative;
+    z-index:1;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.portfolio__r1, .portfolio__r2, .portfolio__r3{
+    height: 0;
+    visibility: hidden;
+}
+.portfolio__togglers{
+    background: var(--font-site-color);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.portfolio__toggler-item{
+    padding:20px 0;
+    width: 33%;
+    text-align: center;
+    font-weight: 700;
+    border-radius:20px;
+}
+.portfolio__r1:checked ~ .portfolio__togglers .portfolio__toggler-item:nth-of-type(1){
+    background: var(--main-gradient);
+}
+.portfolio__r2:checked ~ .portfolio__togglers .portfolio__toggler-item:nth-of-type(2){
+    background: var(--main-gradient);
+}
+.portfolio__r3:checked ~ .portfolio__togglers .portfolio__toggler-item:nth-of-type(3){
+    background: var(--main-gradient);
+}
+.portfolio__images{
+    display: flex;
+    height: 600px;
+    margin-top: 25px;
+}
+.portfolio__img-item{
+    width: 5%;
+    object-fit: cover;
+    filter: brightness(0.1);
+    transition: 0.3s;
+}
+.portfolio__r1:checked ~ .portfolio__images .portfolio__img-item:nth-of-type(1){
+    filter: brightness(1);
+    flex-grow: 1;
+}
+.portfolio__r2:checked ~ .portfolio__images .portfolio__img-item:nth-of-type(2){
+    filter: brightness(1);
+    flex-grow: 1;
+}
+.portfolio__r3:checked ~ .portfolio__images .portfolio__img-item:nth-of-type(3){
+    filter: brightness(1);
+    flex-grow: 1;
+}
+@media screen and (max-width:440px){
+    .portfolio{
+        padding: 0 20px;
+    }
+    .portfolio__togglers{
+        background: none;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .portfolio__toggler-item{
+        width: 100%;
+        margin-bottom: 8px;
+        background: var(--font-site-color);
+    }
+    .portfolio__images{
+        height: fit-content;
+    }
+    .portfolio__img-item{
+        object-fit:contain;
+    }
+}
