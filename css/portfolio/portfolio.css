@@ -94,3 +94,24 @@
         object-fit:contain;
     }
 }
+@media screen and (min-width: 481px) and (max-width: 820px) {
+    .portfolio{
+        padding: 0 20px;
+    }
+    .portfolio__togglers{
+        background: none;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .portfolio__toggler-item{
+        width: 100%;
+        margin-bottom: 8px;
+        background: var(--font-site-color);
+    }
+    .portfolio__images{
+        height: fit-content;
+    }
+    .portfolio__img-item{
+        object-fit:contain;
+    }
+}
